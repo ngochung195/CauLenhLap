@@ -1,0 +1,18 @@
+=== BẮT ĐẦU KIỂM THỬ HỆ THỐNG TECHBANK ===
+loop_processor.js:46 Test Case 1 (Mang mac dinh):
+loop_processor.js:47 - Tong thu nhap thuc te: 16150 USD (Ky vong: 16150) -> PASS ✅
+loop_processor.js:48 - Phat hien gian lan: true o vi tri 5 -> PASS ✅
+loop_processor.js:49 - So lan thu gui bao cao: 3 lan.
+loop_processor.js:53 Test Case 2 (Toan giao dich am):
+loop_processor.js:54 - Tong thu nhap thuc te: 0 USD (Ky vong: 0) -> PASS ✅
+loop_processor.js:55 - Phat hien gian lan: false -> PASS ✅
+loop_processor.js:59 Test Case 3 (Khong co gian lan):
+loop_processor.js:60 - Phat hien gian lan: false -> PASS ✅
+loop_processor.js:61 - Vi tri index quet: -1 (Ky vong: -1) -> PASS ✅
+loop_processor.js:68 Test Case 4 (Kiem tra gioi han Retry khi Server sap hoan toan):
+loop_processor.js:69 - So lan co gang gui: 3 lan (Ky vong: 3) -> PASS ✅
+loop_processor.js:74 
+=== KE THUC QUA TRINH KIEM THU ===
+index.html:31 Live reload enabled.
+﻿
+
