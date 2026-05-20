@@ -1,0 +1,1 @@
+Prompt 1: Hãy sinh cho tôi một mảng mảng Javascript transactions gồm 100 giao dịch ngẫu nhiên, trong đó có khoảng 10 cặp dữ liệu bị trùng lặp. Đừng in ra toàn bộ, chỉ cần cho tôi script tạo dữ liệu để tôi test vòng lặp của mình.

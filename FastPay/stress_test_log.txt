@@ -1,0 +1,51 @@
+Code cũ:
+--- Bắt đầu xử lý pending ---
+transaction_optimizer.js:15 Đang xử lý giao dịch: T2
+transaction_optimizer.js:15 Đang xử lý giao dịch: T4
+transaction_optimizer.js:50 Thời gian xử lý Pending: 0.09716796875 ms
+transaction_optimizer.js:52 
+--- Bắt đầu tìm trùng lặp ---
+transaction_optimizer.js:41 Số vòng lặp đã chạy: 16
+transaction_optimizer.js:55 Thời gian tìm trùng lặp (Legacy): 0.074951171875 ms
+transaction_optimizer.js:57 Các ID bị trùng lặp: 
+(2) ['T1', 'T3']
+﻿
+
+Đã khởi tạo thành công: 100 phần tử.
+transaction_optimizer.js:81 
+--- Bắt đầu xử lý pending ---
+transaction_optimizer.js:84 Thời gian xử lý Pending: 0.051025390625 ms
+transaction_optimizer.js:86 
+--- Bắt đầu tìm trùng lặp ---
+transaction_optimizer.js:74 Số vòng lặp đã chạy (j = i + 1): 10000
+transaction_optimizer.js:89 Thời gian tìm trùng lặp: 0.614013671875 ms
+transaction_optimizer.js:91 Các ID bị trùng lặp tìm thấy: 
+(100) ['T-1', 'T-2', 'T-3', 'T-4', 'T-5', 'T-6', 'T-7', 'T-8', 'T-9', 'T-70', 'T-10', 'T-11', 'T-12', 'T-74', 'T-13', 'T-14', 'T-15', 'T-53', 'T-16', 'T-17', 'T-54', 'T-18', 'T-19', 'T-20', 'T-21', 'T-22', 'T-96', 'T-23', 'T-24', 'T-25', 'T-26', 'T-27', 'T-28', 'T-29', 'T-30', 'T-31', 'T-32', 'T-33', 'T-34', 'T-35', 'T-36', 'T-37', 'T-38', 'T-39', 'T-40', 'T-41', 'T-42', 'T-43', 'T-44', 'T-45', 'T-46', 'T-47', 'T-48', 'T-84', 'T-49', 'T-50', 'T-87', 'T-51', 'T-52', 'T-55', 'T-56', 'T-57', 'T-58', 'T-59', 'T-60', 'T-61', 'T-62', 'T-63', 'T-64', 'T-65', 'T-66', 'T-67', 'T-68', 'T-69', 'T-71', 'T-72', 'T-73', 'T-75', 'T-76', 'T-77', 'T-78', 'T-79', 'T-80', 'T-81', 'T-82', 'T-83', 'T-85', 'T-86', 'T-88', 'T-89', 'T-90', 'T-91', 'T-92', 'T-93', 'T-94', 'T-95', 'T-97', 'T-98', 'T-99', 'T-100']
+﻿
+
+
+
+
+Code mới: 
+--- Bắt đầu xử lý pending ---
+--- Bắt đầu xử lý pending ---
+transaction_optimizer.js:15 Đang xử lý giao dịch: T2
+transaction_optimizer.js:15 Đang xử lý giao dịch: T4
+transaction_optimizer.js:50 Thời gian xử lý Pending: 0.056884765625 ms
+transaction_optimizer.js:52 
+--- Bắt đầu tìm trùng lặp ---
+transaction_optimizer.js:41 Số vòng lặp đã chạy: 6
+transaction_optimizer.js:55 Thời gian tìm trùng lặp (Legacy): 0.046875 ms
+transaction_optimizer.js:57 Các ID bị trùng lặp: (2) ['T1', 'T3']
+
+
+Đã khởi tạo thành công: 100 phần tử.
+transaction_optimizer.js:82 
+--- Bắt đầu xử lý pending ---
+transaction_optimizer.js:85 Thời gian xử lý Pending: 0.088134765625 ms
+transaction_optimizer.js:87 
+--- Bắt đầu tìm trùng lặp ---
+transaction_optimizer.js:75 Số vòng lặp đã chạy (j = i + 1): 4950
+transaction_optimizer.js:90 Thời gian tìm trùng lặp: 0.47900390625 ms
+transaction_optimizer.js:92 Các ID bị trùng lặp tìm thấy: Array(18)
+index.html:31 Live reload enabled.
