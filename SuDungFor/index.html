@@ -1,0 +1,17 @@
+<body>
+    <h3>Sử dụng vòng lặp for</h3>
+
+    <p id="Kq"></p>
+
+    <script>
+        let num = prompt("Tính tổng từ 1 đến...");
+
+        let total = 0;
+
+        for (let i = 1; i <= num; i++) {
+            total += i;
+        }
+
+        document.getElementById('Kq').innerText = `Tổng từ 1 đến ${num} là: ${total}`;
+    </script>
+</body>
