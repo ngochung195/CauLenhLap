@@ -1,0 +1,55 @@
+﻿
+medicore_algorithms.js:72 - Danh sách bệnh nhân có trạng thái 'critical':
+medicore_algorithms.js:73 
+(index)
+id
+name
+status
+age
+heartRate
+0	'P002'	'Tran Thi B'	'critical'	60	130
+1	'P004'	'Pham Thi D'	'critical'	72	45
+Array(2)
+medicore_algorithms.js:74 -----------------------------------------
+medicore_algorithms.js:77 3. KIỂM TRA THUẬT TOÁN THỐNG KÊ HỆ THỐNG:
+medicore_algorithms.js:79 - Kết quả thống kê tổng quan:
+medicore_algorithms.js:80   + Tổng số bệnh nhân: 4
+medicore_algorithms.js:81   + Số ca nguy kịch (critical): 2
+medicore_algorithms.js:82   + Nhịp tim trung bình toàn viện: 83 bpm
+medicore_algorithms.js:83 -----------------------------------------
+medicore_algorithms.js:89 === THỜI ĐIỂM 1: DỮ LIỆU BAN ĐẦU (4 BỆNH NHÂN) ===
+medicore_algorithms.js:90 - Tìm kiếm P005: null
+medicore_algorithms.js:91 - Số lượng ca 'critical': 2
+medicore_algorithms.js:92 - Thống kê tổng quan: 
+{totalPatients: 4, criticalCount: 2, averageHeartRate: 83}
+medicore_algorithms.js:95 
+--------------------------------------------------
+medicore_algorithms.js:98 >>> LỆNH: Thêm bệnh nhân P005 và P006 vào hệ thống...
+medicore_algorithms.js:102 
+--------------------------------------------------
+medicore_algorithms.js:104 === THỜI ĐIỂM 2: DỮ LIỆU ĐÃ CẬP NHẬT ĐỘNG (6 BỆNH NHÂN) ===
+medicore_algorithms.js:107 1. KIỂM TRA TÌM KIẾM ĐỘNG:
+medicore_algorithms.js:109 - Tìm kiếm bệnh nhân mới 'P005': 
+{id: 'P005', name: 'Hoang Van E', status: 'stable', age: 28, heartRate: 70}
+medicore_algorithms.js:113 
+2. KIỂM TRA LỌC ĐỘNG:
+medicore_algorithms.js:115 - Số lượng ca nguy kịch mới: 3 (Tăng từ 2 lên 3)
+medicore_algorithms.js:116 
+(index)
+id
+name
+status
+age
+heartRate
+0	'P002'	'Tran Thi B'	'critical'	60	130
+1	'P004'	'Pham Thi D'	'critical'	72	45
+2	'P006'	'Vu Thi F'	'critical'	65	145
+Array(3)
+medicore_algorithms.js:120 
+3. KIỂM TRA THỐNG KÊ ĐỘNG:
+medicore_algorithms.js:122 - Kết quả thống kê mới tự động cập nhật:
+medicore_algorithms.js:123   + Tổng số bệnh nhân: 6 (Trước đó: 4)
+medicore_algorithms.js:124   + Số ca nguy kịch: 3 (Trước đó: 2)
+medicore_algorithms.js:125   + Nhịp tim trung bình mới: 91 bpm (Trước đó: 83 bpm)
+﻿
+
