@@ -1,0 +1,30 @@
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 4 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 5 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 6 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 7 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 10 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 11 do số tiền không hợp lệ.
+2
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: undefined do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 21 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 22 do số tiền không hợp lệ.
+data_processor.js:92 [Tính tổng] Bỏ qua đơn hàng lỗi ID: 23 do số tiền không hợp lệ.
+data_processor.js:159 Tổng doanh thu trước khi ship: NaN
+data_processor.js:118 [Ship] Đơn hàng 1 đang xử lý. Tài xế còn lại: 1
+data_processor.js:118 [Ship] Đơn hàng 2 đang xử lý. Tài xế còn lại: 0
+data_processor.js:104 [Ship] HẾT TÀI XẾ KHẢ DỤNG. Dừng điều phối đơn hàng.
+data_processor.js:163 Trạng thái đơn hàng sau khi điều phối tài xế: 
+(59) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, null, undefined, {…}, Array(0), 'Một chuỗi lạc loài', 12345, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+data_processor.js:165 
+--- THỬ NGHIỆM 1: Trường hợp mạng ổn định (Thành công ngay từ lần đầu) ---
+data_processor.js:126 --> Đang kết nối và đọc dữ liệu...
+data_processor.js:140 Lấy dữ liệu thành công!
+data_processor.js:168 
+--- THỬ NGHIỆM 2: Trường hợp lỗi hệ thống (Sẽ chạy do-while 1 lần đầu + 3 lần retry) ---
+data_processor.js:126 --> Đang kết nối và đọc dữ liệu...
+data_processor.js:144 Dữ liệu trống hoặc lỗi! Đang thử lại lần 1/3...
+data_processor.js:126 --> Đang kết nối và đọc dữ liệu...
+data_processor.js:144 Dữ liệu trống hoặc lỗi! Đang thử lại lần 2/3...
+data_processor.js:126 --> Đang kết nối và đọc dữ liệu...
+data_processor.js:144 Dữ liệu trống hoặc lỗi! Đang thử lại lần 3/3...
+data_processor.js:152 Thất bại: Đã thử lại 3 lần nhưng không thể lấy được dữ liệu.
