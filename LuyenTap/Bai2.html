@@ -1,0 +1,19 @@
+<body>
+    <h2>Tính giai thừa của một số nguyên dương</h2>
+
+    <script>
+        function tinhGiaiThua(n) {
+            if (n < 0) return "Không thể tính giai thừa của số âm";
+            if (n === 0 || n === 1) return 1;
+
+            let ketQua = 1;
+            for (let i = 2; i <= n; i++) {
+                ketQua *= i;
+            }
+            return ketQua;
+        }
+
+        let so = 5;
+        document.write("Giai thừa của " + so + " là: " + tinhGiaiThua(so));
+    </script>
+</body>

@@ -1,0 +1,57 @@
+<body>
+
+    <div class="goc">
+        <h3>1. Góc vuông ở DƯỚI - BÊN TRÁI</h3>
+        <script>
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </div>
+
+    <div class="goc">
+        <h3>2. Góc vuông ở TRÊN - BÊN TRÁI</h3>
+        <script>
+            for (let i = 5; i >= 1; i--) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </div>
+
+    <div class="goc">
+        <h3>3. Góc vuông ở DƯỚI - BÊN PHẢI</h3>
+        <pre><script>
+            for (let i = 1; i <= 5; i++) {
+                for (let j = 1; j <= 5 - i; j++) {
+                    document.write("  ");
+                }
+                for (let k = 1; k <= i; k++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        </script></pre>
+    </div>
+
+    <div class="goc">
+        <h3>4. Góc vuông ở TRÊN - BÊN PHẢI</h3>
+        <pre><script>
+            for (let i = 5; i >= 1; i--) {
+                for (let j = 1; j <= 5 - i; j++) {
+                    document.write("  ");
+                }
+                for (let k = 1; k <= i; k++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        </script></pre>
+    </div>
+
+</body>

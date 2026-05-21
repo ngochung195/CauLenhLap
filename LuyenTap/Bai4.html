@@ -1,0 +1,15 @@
+<body>
+    <h3>Hình chữ nhật</h3>
+    <pre><script>
+        let result = "";
+        for (let i = 1; i <= 7; i++) {
+            if (i === 1 || i === 7) {
+                result += "* ".repeat(10);
+            } else {
+                result += "* " + "  ".repeat(8) + "* ";
+            }
+            result += "\n";
+        }
+        document.write(result);
+    </script></pre>
+</body>

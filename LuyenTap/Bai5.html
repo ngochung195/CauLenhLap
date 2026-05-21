@@ -1,0 +1,43 @@
+<body>
+    <h3>Tính lãi ngân hàng</h3>
+    <div>
+        <label>Số tiền vay: </label>
+        <input id="tienVay" type="number">
+    </div>
+    <div>
+        <label>Số tháng vay: </label>
+        <input id="thang" type="number">
+    </div>
+    <div>
+        <label>Lãi xuất hàng tháng: </label>
+        <input id="laiXuat" type="number">
+    </div>
+    <div>
+        <button id="tinh">Tính tổng tiền cần trả</button>
+    </div>
+    <p id="msg"></p>
+    <script>
+        let tienbd = document.getElementById('tienVay');
+        let thang = document.getElementById('thang');
+        let lai = document.getElementById('laiXuat');
+        let nutTinh = document.getElementById('tinh');
+        let msgElement = document.getElementById('msg');
+
+        nutTinh.addEventListener('click', function tinhTong() {
+            let soTienGoc = Number(tienbd.value);
+            let soThang = Number(thang.value);
+            let laiSuat = Number(lai.value) / 100;
+
+            let tongTien = soTienGoc;
+            let message = "";
+
+            for (let i = 0; i < soThang; i++) {
+                tongTien += tongTien * laiSuat;
+
+                message += "Tổng tiền cần trả sau tháng thứ " + (i + 1) + " là: " + Math.round(tongTien).toLocaleString('vi-VN') + "đ<br>";
+            }
+
+            msgElement.innerHTML = message;
+        });
+    </script>
+</body>

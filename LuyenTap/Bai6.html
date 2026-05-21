@@ -1,0 +1,17 @@
+<body>
+    <h3>Hình trái tim</h3>
+    <pre><script>
+        let result = "";
+        result += "   *** *** \n";
+        result += " ***** ***** \n";
+        result += "*************\n";
+
+        for (let i = 0; i <= 6; i++) {
+            result += " ".repeat(i);
+            result += "*".repeat(13 - 2 * i);
+            result += "\n";
+        }
+
+        document.write(result);
+    </script></pre>
+</body>
