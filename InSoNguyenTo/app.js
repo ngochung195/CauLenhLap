@@ -1,27 +1,35 @@
-let numbers = Number(prompt("Số lượng số nguyên tố cần in"));
+
+let numbers;
+do {
+    numbers = Number(prompt("Số lượng số nguyên tố cần in"));
+
+    if (isNaN(numbers) || numbers <= 0) {
+        alert("Vui lòng nhập số nguyên dương hợp lệ!");
+    }
+} while (isNaN(numbers) || numbers <= 0);
 
 let count = 0;
 
-let N = 2;
+let number = 2;
 
-let Kq = "";
+let result = "";
 
-while (count != numbers) {
-    let nto = true;
+while (count < numbers) {
+    let isPrime = true;
 
-    for (let i = 2; i <= Math.sqrt(N); i++) {
-        if (N % i === 0) {
-            nto = false;
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            isPrime = false;
             break;
         }
     }
 
-    if (nto) {
-        Kq += N + " ";
+    if (isPrime) {
+        result += number + " ";
         count++;
     }
 
-    N++;
-
-    document.getElementById('snt').innerHTML = Kq;
+    number++;
 }
+document.getElementById('snt').innerHTML = result;
+
